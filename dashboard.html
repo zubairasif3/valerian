@@ -27,13 +27,23 @@
                     <ul class="list-group">
                         <!-- Separator with title -->
                         <li class="list-group-item sidebar-separator-title text-muted d-flex justify-content-center align-items-center logo-left text-center">
-                            <span class="menu-collapsed logo-heading">
-                                <div class="laptop-icon">
-                                    <div class="laptop-img">
-                                        <img src="assets/icon/laptop.svg" class="">
-                                    </div>
-                                    <div class="laptop-text1">Valerian</div>
-                                </div>
+                            <span class="logo-heading">
+                                <span class="fa-fw me-3">
+                                    <a href="#" data-toggle="sidebar-colapse" class="pt-2 d-md-inline-block d-none">
+                                        <div class="laptop-icon">
+                                            <div class="laptop-img">
+                                                <img src="assets/icon/laptop.svg" class="">
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <span class="d-inline-block d-md-none">
+                                        <div class="laptop-icon">
+                                            <div class="laptop-img">
+                                                <img src="assets/icon/laptop.svg" class="">
+                                            </div>
+                                        </div>
+                                    </span>
+                                </span>    
                             </span>    
                         </li>            
                         <a href="#" class="list-group-item list-group-item-action">
@@ -84,7 +94,7 @@
                     <div class="top-section px-4">
                         <div class="flex-div">
                             <div>
-                                <form action="#" method="get"  class="search-bar" traget="_blank">
+                                <form action="#" method="get"  class="search-bar d-none" traget="_blank">
                                     <input type="text" placeholder="Search for resources" name="q">
                                     <button type="submit">  <i class="fas fa-search"></i></button>
                                 </form>
@@ -99,7 +109,7 @@
                     </div>
                     <div class="page-content">
                         <div class="row mx-auto w-100 align-items-end">
-                            <div class="col-lg-5 col-md-6 col-sm-12 col-12 mb-4">
+                            <div class="col-lg-5 col-md-6 col-sm-12 col-12 mb-4 d-none">
                                 <div class="main-heading">Good morning, Valerian</div>
                                 <div class="main-text">Manage your space and resources</div>
                                 <div class="button d-none">

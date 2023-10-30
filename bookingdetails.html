@@ -45,28 +45,24 @@
                     </div>
                 </div>
                 <div class="mb-30 pt-2">
-                    <select class="form-select booking-details-select" aria-label="Select Province">
-                        <option>1</option>
-                        <option value="1">2</option>
-                        <option value="2">3</option>
-                      </select>
+                    <input type="number" class="form-control" value="1" required>
                 </div>
                 <div id="calendar" class="calendar mb-30">
                     <div class="calendar-title">
                         <div class="calendar-title-text"></div>
                             <div class="calendar-button-group">
-                                <button id="prevMonth">&lt;</button>
+                                <button >&lt;</button>
                                 <button id="today">Today</button>
-                                <button id="nextMonth">&gt;</button>
+                                <button>&gt;</button>
                             </div>
                     </div>
                     <div class="calendar-day-name"></div>
                     <div class="calendar-dates"></div>
                     <div class="chevron-div d-flex justify-content-between pt-4">
-                        <div class="left-chevron-cal ps-2">
+                        <div class="left-chevron-cal ps-2" id="prevMonth">
                             <img src="assets/icon/chevron-left.svg" alt="">
                         </div>
-                        <div class="right-chevron-cal pe-3">
+                        <div class="right-chevron-cal pe-3" id="nextMonth">
                             <img src="assets/icon/chevron-right.svg" alt="">
                         </div>
                     </div>
@@ -79,12 +75,7 @@
                     </div>
                 </div>
                 <div class="pt-3">
-                    <select class="form-select booking-details-select" aria-label="Select Province">
-                        <option>9 AM</option>
-                        <option value="1">10 AM</option>
-                        <option value="2">11 AM</option>
-                        <option value="2">12 AM</option>
-                    </select>
+                    <input type="time" class="form-control" required>
                 </div>
                 <div class="d-flex justify-content-center"><div class="book-button"><a href="#">Book</a></div></div>
             </div>

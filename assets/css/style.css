@@ -883,12 +883,12 @@ body{
     margin: auto;
 }
 
-.form-select:focus{
+.booking-section2 .form-control:focus{
     box-shadow: none;
     border-color: #2c2c2c !important;
 }
 
-.form-select{
+.booking-section2 .form-control{
     border: 1px solid #2c2c2c;
     box-sizing: border-box;
     border-radius: 2px;
@@ -898,6 +898,7 @@ body{
     font-weight: 500;
     height: 40px;
     cursor: pointer;
+    text-align: center;
 }
 
 .confirm-boobking{
@@ -1122,7 +1123,7 @@ body{
     background: #2c2c2c;
     color: #fff;
 }
-.calendar #prevMonth, .calendar #nextMonth, .calendar #today {
+/* .calendar #prevMonth, .calendar #nextMonth, .calendar #today {
     padding: 2px 6px;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
@@ -1133,7 +1134,7 @@ body{
     cursor: pointer;
     color: #333;
     display: none;
-}
+} */
 .calendar #today {
     font-size: 13px;
 }
@@ -1150,6 +1151,7 @@ body{
     display: flex;
     align-items: center;
     gap: 8px;
+    display: none;
 }
 
 .right-chevron-cal img,
@@ -1312,7 +1314,7 @@ body{
     box-shadow: 2px 2px 4px rgba(255,255,255,0.1);
     position: relative;
 }
-.pricing-page .navbar-section::before{
+/* .pricing-page .navbar-section::before{
     content: " ";
     position: absolute;
     width: 40px;
@@ -1320,7 +1322,7 @@ body{
     bottom: -6px;
     left: 0px;
     background-color: #313131;
-}
+} */
 .pricing-page .navbar-brand{
     color: #ffffff;
     font-size: 28px;

@@ -11,7 +11,7 @@ let monthNames = [
   "July",
   "August",
   "September",
-  "Today's Date",
+  "October",
   "November",
   "December"
 ];
@@ -65,9 +65,9 @@ function plotDays() {
   } `;
 
 //   month name and year
-//   calendarTitle.innerHTML = `${
-//     monthNames[currentDate.month()]
-//   } - ${currentDate.year()}`;
+  calendarTitle.innerHTML = `${
+    monthNames[currentDate.month()]
+  } - ${currentDate.year()}`;
 }
 
 //highlight current date
@@ -88,6 +88,14 @@ nextMonthButton.addEventListener("click", function () {
 prevMonthButton.addEventListener("click", function () {
   newMonth = currentDate.subtract(1, "month").startOf("month");
   setSelectedMonth();
+  if (newMonth.$M == dayjs().$M) {
+    var currentdatefull = new Date();
+    var currentDateOnly = currentdatefull.getDate();
+    dateItems = document.querySelectorAll(".calendar-dates-day");
+    if (dateItems[currentDateOnly - 1]) {
+      dateItems[currentDateOnly - 1].classList.add("today-date");
+    }
+  }
 });
 
 //today button event
@@ -105,6 +113,14 @@ function setSelectedMonth() {
   firstDayPosition = newMonth.startOf("month").day();
   currentDate = newMonth;
   plotDays();
+  if (newMonth.$M == dayjs().$M) {
+    var currentdatefull = new Date();
+    var currentDateOnly = currentdatefull.getDate();
+    dateItems = document.querySelectorAll(".calendar-dates-day");
+    if (dateItems[currentDateOnly - 1]) {
+      dateItems[currentDateOnly - 1].classList.add("today-date");
+    }
+  }
 }
 
 //init
