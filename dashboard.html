@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link href="assets/highcharts/css/highcharts-white.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+<body>
+    <div class="wrappper">
+        <div class="container-fluid p-0">
+            <!-- Bootstrap row -->
+            <div class="row w-100 m-auto" id="body-row">
+                <!-- Sidebar -->
+                <div id="sidebar-container" class="sidebar-expanded shadow-lg "><!-- d-* hiddens the Sidebar in smaller devices. Its itens can be kept on the Navbar 'Menu' -->
+                    <div class="vector-cross">
+                        <div class="d-flex w-100 justify-content-end align-items-center">
+                            <a href="#" data-close="mobile-sidebar" class="btn text-white">
+                                <span id="" class="fa fa-times mr-3"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Bootstrap List Group -->
+                    <ul class="list-group">
+                        <!-- Separator with title -->
+                        <li class="list-group-item sidebar-separator-title text-muted d-flex justify-content-center align-items-center logo-left text-center">
+                            <!-- <span class="fa-fw me-3">
+                                <a href="#" data-toggle="sidebar-colapse" class="pt-2 d-md-inline-block d-none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px; overflow: visible; fill: rgb(255, 255, 255);" viewBox="0 0 640 512"><path d="M128 96h384v256h64v-272c0-26.38-21.62-48-48-48h-416c-26.38 0-48 21.62-48 48V352h64V96zM624 383.1h-608c-8.75 0-16 7.25-16 16v16c0 35.25 28.75 64 64 64h512c35.25 0 64-28.75 64-64v-16C640 391.2 632.8 383.1 624 383.1z"/></svg>
+                                </a>
+                                <span class="d-inline-block d-md-none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px; overflow: visible; fill: rgb(255, 255, 255);" viewBox="0 0 640 512"><path d="M128 96h384v256h64v-272c0-26.38-21.62-48-48-48h-416c-26.38 0-48 21.62-48 48V352h64V96zM624 383.1h-608c-8.75 0-16 7.25-16 16v16c0 35.25 28.75 64 64 64h512c35.25 0 64-28.75 64-64v-16C640 391.2 632.8 383.1 624 383.1z"/></svg>
+                                </span>
+                            </span>     -->
+                            <span class="menu-collapsed logo-heading"><img src="assets/images/logo-text.png" class="logo-text"></span>    
+                        </li>            
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 align-items-center">
+                                <span class="fa fa-user fa-fw me-3"></span>
+                                <span class="menu-collapsed">Office Layout</span>    
+                            </div>
+                        </a>            
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 align-items-center">
+                                <span class="fa fa-share-alt fa-fw me-3"></span>
+                                <span class="menu-collapsed">Resource</span>    
+                            </div>
+                        </a>            
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 align-items-center">
+                                <span class="fa fa-users fa-fw me-3"></span>
+                                <span class="menu-collapsed">HR Management</span>    
+                            </div>
+                        </a>            
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 align-items-center">
+                                <span class="fa fa-calendar fa-fw me-3"></span>
+                                <span class="menu-collapsed">Who's in the office</span>    
+                            </div>
+                        </a>            
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 align-items-center">
+                                <span class="fa-fw me-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20" height="20" fill="#fff" x="0" y="0" opacity="100%">
+                                        <path d="M177.9 494.1C159.2 512.8 128.8 512.8 110.1 494.1L17.94 401.9C-.8054 383.2-.8054 352.8 17.94 334.1L68.69 283.3L116.7 331.3C122.9 337.6 133.1 337.6 139.3 331.3C145.6 325.1 145.6 314.9 139.3 308.7L91.31 260.7L132.7 219.3L180.7 267.3C186.9 273.6 197.1 273.6 203.3 267.3C209.6 261.1 209.6 250.9 203.3 244.7L155.3 196.7L196.7 155.3L244.7 203.3C250.9 209.6 261.1 209.6 267.3 203.3C273.6 197.1 273.6 186.9 267.3 180.7L219.3 132.7L260.7 91.31L308.7 139.3C314.9 145.6 325.1 145.6 331.3 139.3C337.6 133.1 337.6 122.9 331.3 116.7L283.3 68.69L334.1 17.94C352.8-.8055 383.2-.8055 401.9 17.94L494.1 110.1C512.8 128.8 512.8 159.2 494.1 177.9L177.9 494.1z"/>
+                                    </svg>
+                                </span>
+                                <span class="menu-collapsed">Analytics</span>    
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action setting-div-style">
+                            <div class="d-flex w-100 align-items-center">
+                                <span class="fa fa-sliders-h fa-fw me-3"></span>
+                                <span class="menu-collapsed">Setting</span>
+                            </div>
+                        </a>
+                    </ul><!-- List Group END-->
+                </div><!-- sidebar-container END -->
+            
+                <!-- MAIN -->
+                <div class="col p-0">
+                    <div class="top-section px-4">
+                        <div class="flex-div">
+                            <div>
+                                <form action="#" method="get"  class="search-bar" traget="_blank">
+                                    <input type="text" placeholder="Search for resources" name="q">
+                                    <button type="submit">  <i class="fas fa-search"></i></button>
+                                </form>
+                            </div>
+                            <div class="top-right-menu">
+                                <a href="#" class="btn btn-mobile-bar d-none"><i class="fa fa-bars" aria-hidden="true"></i></a>
+                                <a href="#" class="btn btn-cart me-2"><i class="fa fa-bell" aria-hidden="true"></i></a>
+                                <a href="#" class="btn btn-cart me-2"><i class="fa fa-comments" aria-hidden="true"></i></a>
+                                <a href="#" class="btn btn-users-dropdown"><img src="assets/images/admin.png" class="admin-img">Lucy M.  <i class="fa fa-chevron-down" aria-hidden="true"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-content">
+                        <div class="row mx-auto w-100 align-items-end">
+                            <div class="col-lg-5 col-md-6 col-sm-12 col-12 mb-4">
+                                <div class="main-heading">Good morning, Valerian</div>
+                                <div class="main-text">Manage your space and resources</div>
+                                <div class="button">
+                                    <a href="#" class="btn btn-setting">Settings</a>
+                                </div>
+                                <div class="flex-cards">
+                                    <div class="dash-card">
+                                        <div class="heading">Next team meeting</div>
+                                        <div class="text">Week 12 Agenda</div>
+                                        <div class="flex">
+                                            <div class="imgs">
+                                                <img src="assets/images/dashCards/dash-card-1.png" alt="">
+                                                <img src="assets/images/dashCards/dash-card-2.png" alt="">
+                                                <img src="assets/images/dashCards/dash-card-3.png" alt="">
+                                                <img src="assets/images/dashCards/dash-card-4.png" alt="">
+                                            </div>
+                                            <div>Design team</div>
+                                        </div>
+                                    </div>
+                                    <div class="dash-card">
+                                        <div class="heading">Next sprint</div>
+                                        <div class="text">Week 12 Goals</div>
+                                        <div class="flex">
+                                            <div class="imgs">
+                                                <img src="assets/images/dashCards/dash-card-1.png" alt="">
+                                                <img src="assets/images/dashCards/dash-card-2.png" alt="">
+                                                <img src="assets/images/dashCards/dash-card-3.png" alt="">
+                                                <img src="assets/images/dashCards/dash-card-4.png" alt="">
+                                            </div>
+                                            <div>Design team</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-7 col-md-6 col-sm-12 col-12 mb-4">
+                                <div class="row w-100 mx-auto dash-right-cards">
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+                                        <div class="dash-card">
+                                            <div class="img">
+                                                <img src="assets/images/dashCards/dash-card-9.png" class="w-100">
+                                            </div>
+                                            <div class="heading">Track your daily progress</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+                                        <div class="dash-card">
+                                            <div class="img">
+                                                <img src="assets/images/dashCards/dash-card-10.png" class="w-100">
+                                            </div>
+                                            <div class="heading">Frequently Asked Questions</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+                                        <div class="dash-card">
+                                            <div class="img">
+                                                <img src="assets/images/dashCards/dash-card-10.png" class="w-100">
+                                            </div>
+                                            <div class="heading">Help & Support</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mx-auto w-100 second-protion">
+                            <div class="col-lg-5 col-md-6 col-sm-12 col-12 mb-4">
+                                <div class="main-heading mb-4">My Tasks</div>
+                                <div class="dash-card mb-4">
+                                    <div class="tag">2 Active Tasks</div>
+                                    <div class="flex mb-3">
+                                        <div class="heading">
+                                            <img src="assets/images/dashCards/dash-card-11.png" class="me-2">
+                                            <span class="">Admirra</span>
+                                            <span class="blackDot"></span>
+                                            <span>Interview with developer</span>
+                                        </div>
+                                        <div class="text">Due today</div>
+                                    </div>
+                                    <div class="flex mb-3">
+                                        <div class="heading">
+                                            <img src="assets/images/dashCards/dash-card-12.png" class="me-2">
+                                            <span class="">Admirra</span>
+                                            <span class="blackDot"></span>
+                                            <span>Reflection time</span>
+                                        </div>
+                                        <div class="text">Tomorrow</div>
+                                    </div>
+                                    <div class="flex mb-3">
+                                        <div class="heading">
+                                            <img src="assets/images/dashCards/dash-card-13.png" class="me-2">
+                                            <span class="">Admirra</span>
+                                            <span class="blackDot"></span>
+                                            <span>Sprint questions preparation</span>
+                                        </div>
+                                        <div class="text">Due today</div>
+                                    </div>
+                                    <div class="button text-center">
+                                        <a href="#" class="btn btn-tasks">See all tasks</a>
+                                    </div>
+                                </div>
+                                <div class="main-heading mb-4">Total working hours</div>
+                                <div id="chart15"></div>
+                            </div>
+                            <div class="col-lg-7 col-md-6 col-sm-12 col-12 mb-4">
+                                <div class="row mx-auto w-100">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 p-mb-0">
+                                        <div class="main-heading mb-4">December 2021</div>
+                                        <div class="days-flex mb-4">
+                                            <div class="day">
+                                                <div class="content">
+                                                    <div>Sunday</div>
+                                                    <div>2</div>
+                                                </div>
+                                            </div>
+                                            <div class="day active">
+                                                <div class="content">
+                                                    <div>Monday</div>
+                                                    <div>3</div>
+                                                </div>
+                                            </div>
+                                            <div class="day">
+                                                <div class="content">
+                                                    <div>Tuesday</div>
+                                                    <div>4</div>
+                                                </div>
+                                            </div>
+                                            <div class="day">
+                                                <div class="content">
+                                                    <div>Wednesday</div>
+                                                    <div>5</div>
+                                                </div>
+                                            </div>
+                                            <div class="day">
+                                                <div class="content">
+                                                    <div>Thursday</div>
+                                                    <div>6</div>
+                                                </div>
+                                            </div>
+                                            <div class="day">
+                                                <div class="content">
+                                                    <div>Friday</div>
+                                                    <div>7</div>
+                                                </div>
+                                            </div>
+                                            <div class="day">
+                                                <div class="content">
+                                                    <div>Saturday</div>
+                                                    <div>8</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="main-heading mb-4">Upcoming calendar items</div>
+                                        <div class="schedules">
+                                            <div class="schedule">
+                                                <div class="left-flex">
+                                                    <div class="count">05</div>
+                                                    <div class="detail">
+                                                        <div class="heading">UX/UI workshop</div>
+                                                        <div class="text">8 of 12 sessions, Mrs. Wilson</div>
+                                                    </div>
+                                                </div>
+                                                <div class="right-content">
+                                                    14:00-14:45
+                                                </div>
+                                            </div>
+                                            <div class="schedule">
+                                                <div class="left-flex">
+                                                    <div class="count">06</div>
+                                                    <div class="detail">
+                                                        <div class="heading">Interaction design</div>
+                                                        <div class="text">8 of 12 sessions, Mrs. Wilson</div>
+                                                    </div>
+                                                </div>
+                                                <div class="right-content">
+                                                    11:00-14:45
+                                                </div>
+                                            </div>
+                                            <div class="schedule">
+                                                <div class="left-flex">
+                                                    <div class="count">07</div>
+                                                    <div class="detail">
+                                                        <div class="heading">Team meeting</div>
+                                                        <div class="text">4 of 20 meetings, Design Team</div>
+                                                    </div>
+                                                </div>
+                                                <div class="right-content">
+                                                    12:00-12:35
+                                                </div>
+                                            </div>
+                                            <div class="schedule">
+                                                <div class="left-flex">
+                                                    <div class="count">08</div>
+                                                    <div class="detail">
+                                                        <div class="heading">User interview</div>
+                                                        <div class="text">1 of 2, Zoom meeting</div>
+                                                    </div>
+                                                </div>
+                                                <div class="right-content">
+                                                    16:00-17:00
+                                                </div>
+                                            </div>
+                                            <div class="schedule">
+                                                <div class="left-flex">
+                                                    <div class="count">09</div>
+                                                    <div class="detail">
+                                                        <div class="heading">User interview</div>
+                                                        <div class="text">2 of 2, Zoom meeting</div>
+                                                    </div>
+                                                </div>
+                                                <div class="right-content">
+                                                    16:00-16:30
+                                                </div>
+                                            </div>
+                                            <div class="button">
+                                                <a href="#" class="btn btn-schedule">See entire schedule</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/highcharts/js/highcharts.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+</body>
+</html>

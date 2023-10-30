@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+<body id="search-page">
+    <div class="wrappper">
+        <div class="container-fluid p-0">
+            <!-- Bootstrap row -->
+            <div class="row w-100 m-auto" id="body-row">
+                <!-- Sidebar -->
+                <div id="sidebar-container" class="sidebar-expanded shadow-lg "><!-- d-* hiddens the Sidebar in smaller devices. Its itens can be kept on the Navbar 'Menu' -->
+                    <div class="vector-cross">
+                        <div class="d-flex w-100 justify-content-end align-items-center">
+                            <a href="#" data-close="mobile-sidebar" class="btn text-white">
+                                <span id="" class="fa fa-times mr-3"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Bootstrap List Group -->
+                    <ul class="list-group">
+                        <!-- Separator with title -->
+                        <li class="list-group-item sidebar-separator-title text-muted d-flex justify-content-center align-items-center logo-left text-center">
+                            <!-- <span class="fa-fw me-3">
+                                <a href="#" data-toggle="sidebar-colapse" class="pt-2 d-md-inline-block d-none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px; overflow: visible; fill: rgb(255, 255, 255);" viewBox="0 0 640 512"><path d="M128 96h384v256h64v-272c0-26.38-21.62-48-48-48h-416c-26.38 0-48 21.62-48 48V352h64V96zM624 383.1h-608c-8.75 0-16 7.25-16 16v16c0 35.25 28.75 64 64 64h512c35.25 0 64-28.75 64-64v-16C640 391.2 632.8 383.1 624 383.1z"/></svg>
+                                </a>
+                                <span class="d-inline-block d-md-none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px; overflow: visible; fill: rgb(255, 255, 255);" viewBox="0 0 640 512"><path d="M128 96h384v256h64v-272c0-26.38-21.62-48-48-48h-416c-26.38 0-48 21.62-48 48V352h64V96zM624 383.1h-608c-8.75 0-16 7.25-16 16v16c0 35.25 28.75 64 64 64h512c35.25 0 64-28.75 64-64v-16C640 391.2 632.8 383.1 624 383.1z"/></svg>
+                                </span>
+                            </span>     -->
+                            <span class="menu-collapsed logo-heading"><img src="assets/images/logo-text.png" class="logo-text"></span> 
+                        </li>            
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 align-items-center">
+                                <span class="fa fa-user fa-fw me-3"></span>
+                                <span class="menu-collapsed">Office Layout</span>    
+                            </div>
+                        </a>            
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 align-items-center">
+                                <span class="fa fa-share-alt fa-fw me-3"></span>
+                                <span class="menu-collapsed">Resource</span>    
+                            </div>
+                        </a>            
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 align-items-center">
+                                <span class="fa fa-users fa-fw me-3"></span>
+                                <span class="menu-collapsed">HR Management</span>    
+                            </div>
+                        </a>            
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 align-items-center">
+                                <span class="fa fa-calendar fa-fw me-3"></span>
+                                <span class="menu-collapsed">Who's in the office</span>    
+                            </div>
+                        </a>            
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 align-items-center">
+                                <span class="fa-fw me-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20" height="20" fill="#fff" x="0" y="0" opacity="100%">
+                                        <path d="M177.9 494.1C159.2 512.8 128.8 512.8 110.1 494.1L17.94 401.9C-.8054 383.2-.8054 352.8 17.94 334.1L68.69 283.3L116.7 331.3C122.9 337.6 133.1 337.6 139.3 331.3C145.6 325.1 145.6 314.9 139.3 308.7L91.31 260.7L132.7 219.3L180.7 267.3C186.9 273.6 197.1 273.6 203.3 267.3C209.6 261.1 209.6 250.9 203.3 244.7L155.3 196.7L196.7 155.3L244.7 203.3C250.9 209.6 261.1 209.6 267.3 203.3C273.6 197.1 273.6 186.9 267.3 180.7L219.3 132.7L260.7 91.31L308.7 139.3C314.9 145.6 325.1 145.6 331.3 139.3C337.6 133.1 337.6 122.9 331.3 116.7L283.3 68.69L334.1 17.94C352.8-.8055 383.2-.8055 401.9 17.94L494.1 110.1C512.8 128.8 512.8 159.2 494.1 177.9L177.9 494.1z"/>
+                                    </svg>
+                                </span>
+                                <span class="menu-collapsed">Analytics</span>    
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action setting-div-style">
+                            <div class="d-flex w-100 align-items-center">
+                                <span class="fa fa-sliders-h fa-fw me-3"></span>
+                                <span class="menu-collapsed">Setting</span>
+                            </div>
+                        </a>
+                    </ul><!-- List Group END-->
+                </div><!-- sidebar-container END -->
+            
+                <!-- MAIN -->
+                <div class="col p-0">
+                    <div class="top-section px-4">
+                        <div class="flex-div">
+                            <div>
+                                <form action="#" method="get"  class="search-bar" traget="_blank">
+                                    <input type="text" placeholder="Search for items, collections, and accounts" name="q">
+                                    <button type="submit">  <i class="fas fa-search"></i></button>
+                                </form>
+                            </div>
+                            <div class="top-right-menu">
+                                <a href="#" class="btn btn-mobile-bar d-none"><i class="fa fa-bars" aria-hidden="true"></i></a>
+                                <a href="#" class="btn btn-users-dropdown"><img src="assets/images/search-admin.png" class="admin-img me-3"> Hello Valerian! </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-content search-page-content">
+                        <div class="search-items">
+                            <div class="search-item">
+                                <div class="main-heading">People</div>
+                                <div class="people-flex">
+                                    <div class="single-people">
+                                        <a href="#" class="btn">
+                                            <div class="img"><img src="assets/images/peoples/people-1.png" class="peopleimg"></div>
+                                            <div class="people-name">Marc Myers</div>
+                                        </a>
+                                    </div>
+                                    <div class="single-people">
+                                        <a href="#" class="btn">
+                                            <div class="img"><img src="assets/images/peoples/people-2.png" class="peopleimg"></div>
+                                            <div class="people-name">Louise Chien</div>
+                                        </a>
+                                    </div>
+                                    <div class="single-people">
+                                        <a href="#" class="btn">
+                                            <div class="img"><img src="assets/images/peoples/people-3.png" class="peopleimg"></div>
+                                            <div class="people-name">Sam Smith</div>
+                                        </a>
+                                    </div>
+                                    <div class="single-people">
+                                        <a href="#" class="btn">
+                                            <div class="img"><img src="assets/images/peoples/people-4.png" class="peopleimg"></div>
+                                            <div class="people-name">Per Andersen</div>
+                                        </a>
+                                    </div>
+                                    <div class="single-people">
+                                        <a href="#" class="btn">
+                                            <div class="img"><img src="assets/images/peoples/people-5.png" class="peopleimg"></div>
+                                            <div class="people-name">Sebastian Lee</div>
+                                        </a>
+                                    </div>
+                                    <div class="single-people">
+                                        <a href="#" class="btn">
+                                            <div class="img"><img src="assets/images/peoples/people-6.png" class="peopleimg"></div>
+                                            <div class="people-name">Becky Jones</div>
+                                        </a>
+                                    </div>
+                                    <div class="single-people">
+                                        <a href="#" class="btn">
+                                            <div class="img"><img src="assets/images/peoples/people-7.png" class="peopleimg"></div>
+                                            <div class="people-name">Han Lo</div>
+                                        </a>
+                                    </div>
+                                    <div class="single-people">
+                                        <a href="#" class="btn">
+                                            <div class="img"><img src="assets/images/peoples/people-8.png" class="peopleimg"></div>
+                                            <div class="people-name">Lisa Mineral</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search-item">
+                                <div class="main-heading">Teams</div>
+                                <div class="team-flex">
+                                    <div class="single-team">
+                                        <div class="content">
+                                            <a href="#" class="btn btn-team first-btn">People</a>
+                                        </div>
+                                    </div>
+                                    <div class="single-team">
+                                        <div class="content">
+                                            <a href="#" class="btn btn-team">Platform</a>
+                                        </div>
+                                    </div>
+                                    <div class="single-team">
+                                        <div class="content">
+                                            <a href="#" class="btn btn-team">Marketing</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search-item">
+                                <div class="main-heading">Location</div>
+                                <div class="location-flex">
+                                    <div class="single-location">
+                                        <div class="content">
+                                            <a href="#" class="btn btn-location">
+                                                <div>Dublin, Ireland </div>
+                                                <div class="time">13:45</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="single-location">
+                                        <div class="content">
+                                            <a href="#" class="btn btn-location">
+                                                <div>Athens, Greece </div>
+                                                <div class="time">16:45</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="single-location">
+                                        <div class="content">
+                                            <a href="#" class="btn btn-location">
+                                                <div>Madrid, Spain </div>
+                                                <div class="time">14:45</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="single-location">
+                                        <div class="content">
+                                            <a href="#" class="btn btn-location">
+                                                <div>Paris, France</div>
+                                                <div class="time">10:30</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+    <!--  script that apply only this page -->
+    <script>
+        // SidebarCollapse();
+        // $('[data-toggle=sidebar-colapse]').css('opacity',0);
+        // $(".setting-div-style").hide();
+    </script>
+</body>
+</html>
