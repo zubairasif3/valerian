@@ -32,9 +32,11 @@ body{
     border-radius: 48px;
 }
 
-.laptop-icon .laptop-img img{
-    width: 16px;
-    height: 16px;
+.laptop-icon{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px;
 }
 
 .laptop-img{
@@ -48,6 +50,10 @@ body{
     align-items: center;
 }
 
+.laptop-icon .laptop-img img{
+    width: 16px;
+    height: 16px;
+}
 .laptop-text1{
     color: #ffffff;
     font-size: 20px;
@@ -55,12 +61,6 @@ body{
     line-height: 24px;
 }
 
-.laptop-icon{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding-top: 20px;
-}
 
 .heading1 .text1{
     color: #ffffff;
@@ -721,7 +721,7 @@ body{
 }
 
 .headsection-button{
-    width: 112px;
+    width: 140px;
     height: 36px;
     border: 0;
     box-sizing: border-box;
@@ -926,11 +926,11 @@ body{
     padding-top: 50px;
 }
 
-/* .additem-page .container{
+.additem-page .container{
     max-width: 1600px;
     margin: auto;
     padding: 0px 20px;
-} */
+}
 
 .additem-page .item-section{
     position: relative;
@@ -950,11 +950,11 @@ body{
 
 /* booking details styling */
 
-/* .list-overview-page .container,
+.list-overview-page .container,
 .booking-details .container{
     max-width: 1250px;
     margin: auto;
-} */
+}
 
 .booking-details-text1{
     color: #ffffff;
@@ -1298,12 +1298,12 @@ body{
 
 /* pricing page style */
 
-/* .pricing-page .caseStudies-section .container,
+.pricing-page .caseStudies-section .container,
 .pricing-page .faqs-section .container,
 .pricing-page .feature-table-section .container,
 .pricing-page .feature-card-section .container{
     max-width: 1100px;
-} */
+}
 .pricing-page .header{
     background-color: #313131;
 }
@@ -1846,9 +1846,9 @@ body{
     color: #ffffff;
 }
 
-/* #order-page .container{
+#order-page .container{
     max-width: 94%;
-} */
+}
 #addElement .minus-team{
     cursor: pointer;
 }
@@ -1995,12 +1995,12 @@ body{
     line-height: 24px;
 }
 
-@media screen and (min-width: 1200px) {
+/* @media screen and (min-width: 1200px) {
     .container {
         max-width: 1080px;
         margin: auto;
     }
-}
+} */
 @media screen and (max-width:767px) {
 
     /* welcome page styling */

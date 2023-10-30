@@ -21,6 +21,7 @@ body{
     position: relative;
     /* flex: unset; */
 }
+
 .sidebar-expanded {
     width: 200px;
 }
@@ -84,6 +85,35 @@ body{
     font-weight: 700;
     line-height: 38px;
     text-align: right;
+}
+
+.laptop-icon{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 20px;
+}
+
+.laptop-img{
+    width: 48px;
+    height: 32px;
+    background-color: #000000;
+    text-align: center;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.laptop-icon .laptop-img img{
+    width: 16px;
+    height: 16px;
+}
+.laptop-text1{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
 }
 #sidebar-container .logo-heading img{
     max-width: 100%;
