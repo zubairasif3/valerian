@@ -114,6 +114,7 @@ body{
     font-size: 20px;
     font-weight: 500;
     line-height: 24px;
+    display: none;
 }
 #sidebar-container .logo-heading img{
     max-width: 100%;
